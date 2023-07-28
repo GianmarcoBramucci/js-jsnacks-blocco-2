@@ -13,6 +13,8 @@ const cognomi=['marco','giovanni','franco','piero'];
 let invitato;
 let invitati=[];
 for(let i=0;i<nomi.length;i++){
+    let indiceRandom1=Math.floor(Math.random()*(nomi.length))+1;
+    let indiceRandom2=Math.floor(Math.random()*(nomi.length))+1;
     invitato= nomi[i] +" "+cognomi[(nomi.length-1)-i];
     invitati.push(invitato);
     console.log('INVITATO'+i+'^:'+ invitati[i]);
